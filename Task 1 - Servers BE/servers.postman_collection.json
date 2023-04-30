@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "6d3952ea-fbaa-4a74-bd28-899c762da27b",
+		"name": "Spring boot - servers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Populate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/servers/populate",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"servers",
+						"populate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all servers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/servers",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"servers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add server",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\" : \"Test1\",\r\n    \"language\": \"Python\",\r\n    \"framework\": \"Whatever\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/servers",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"servers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete server",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/servers",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"servers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get server by name",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8080",
+			"type": "default"
+		}
+	]
+}
