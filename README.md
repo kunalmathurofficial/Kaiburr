@@ -2,7 +2,7 @@
 
 Tasks 1 - Backend :
 
-The postman collection (Task%201%20-%20Servers%20BE/servers.postman_collection.json)
+The postman collection (https://github.com/kunalmathurofficial/Kaiburr/blob/Main/Task%201%20-%20Servers%20BE/servers.postman_collection.json)
 
 - The backend is built using spring boot and mongoDB
 - Endpoints -->
